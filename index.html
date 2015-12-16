@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>FEI-Mark III</title>
+
+        <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+        <meta name="author" content="Hakim El Hattab">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/mark.css" id="theme">
+
+        <!-- Code syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/pojoaque.css">
+
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+    
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+
+                <section data-markdown>
+                    <script type="text/template">
+                        # FEI - *Mark III*
+                        ### 前端神盾局演讲主题与规范
+
+                        <small style="margin-top:17px;">
+                            <a href="#/1">黄玄@FEI</a> 
+                        </small>
+                    </script>
+                </section>
+                
+                <section data-markdown>
+                    <script type="text/template">
+                        <img src="attach/hux.jpg" style="
+                            border: none;
+                            box-shadow:none;
+                            width: 200px;
+                            -webkit-clip-path: polygon(50% 0, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+                            clip-path: polygon(50% 0, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+                        "/>
+
+                        ## 黄玄
+
+                        在这里描述你自己
+
+                        <small>
+                            <a href="http://huangxuan.me">Blog</a> /
+                            <a href="http://weibo.com/huxpro">@Huxpro</a> /
+                            <a href="https://github.com/huxpro">GitHub</a> /
+                            <a href="http://www.zhihu.com/people/huxpro">知乎</a>
+                        </small>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ### 副标题
+
+                        # *Header One*
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        <img src="attach/joke/js.jpg" style="width:360px;" />
+
+                        - 图片与列表
+
+                        - Example *List Item*
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        Write Code
+
+                        ```javascript
+                        function foo(){
+                            //...
+                        }
+                        function bar(){
+                            //...
+                        }
+                        ```
+
+                        这个会后出来
+                        <!-- .element: class="fragment" -->
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        再来一个例子：*Namespace* 模式
+
+                        ```javascript
+                        var MYAPP = {
+                            foo: function(){},
+                            bar: function(){}
+                        }
+
+                        MYAPP.foo();
+                        ```
+
+                        - 出来
+                        <!-- .element: class="fragment" -->
+
+                        - 再出来
+                        <!-- .element: class="fragment" -->
+                    </script>
+                </section>
+
+                <section data-markdown data-background="attach/bm_1.jpg"
+                    style="background:rgba(0,0,0,0.8)"
+                >
+                    <script type="text/template">
+                        - 来个背景图片！！
+
+                        - 也可以用视频
+
+                        - 甚至 GIF
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        尽量不要出现 HTML，实在需要的话用 Jade 代替
+
+                        ```
+                        script(src="LAB.js" async)
+                        ```
+
+                        ```javascript
+                        $LAB.script("framework.js").wait()
+                            .script("plugin.framework.js")
+                            .script("myplugin.framework.js").wait()
+                            .script("init.js");
+                        ```
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## [CommonJS](http://www.commonjs.org/) - API Standard
+
+                        (2009.08)
+
+                        <img src="attach/commonjs-logo.png" class="logo" style="max-width:200px" />
+
+                        > 在这里介绍类库！
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ### 有时候你会需要表格
+
+                        <br>
+
+                         硬盘 I/O | | 网速 I/O
+                        -----|------- | ------|-------
+                        HDD: | *100 MB/s*  | ADSL: | *4 Mb/s*
+                        SSD: | *600 MB/s*  | 4G: | *100 Mb/s*
+                        SATA-III:| *6000 Mb/s*  | Fiber: | *100 Mb/s*
+
+                    </script>
+                </section>
+
+
+                <style>
+                    .bloom{
+                        transform: scale(0);
+                        transition: transform 0.7s cubic-bezier(0.68, 0.04, 0.49, 0.95);
+                    }
+                    .present .bloom{
+                        transform: scale(1);
+                    }
+                </style>
+                <section data-markdown>
+                    <script type="text/template">
+                        <div class="bloom">
+                            <p>如果无聊的话你可以自己加动画或者自定义样式</p>
+                            <h1>*Bloom!*</h1>
+                            <small>不过请写在行内，永远不要改引用的 CSS</small>
+                        </div>
+                    </script>
+                </section>
+                
+                <!--永远保留提问页面 -->
+                <section data-markdown>
+                    <script type="text/template">
+                        # *Question*
+                        Hey, don't be shy.
+                    </script>
+                </section>
+                
+                <!--如果需要，可以替换上自己的二维码-->
+                <section data-markdown>
+                    <script type="text/template">
+                        <img src="attach/qrcode.png" style="
+                            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+                            width: 350px;
+                            height: 350px;
+                        " />
+
+                        #### [huangxuan.me/js-module-7day](http://huangxuan.me/js-module-7day/#/)
+
+                        <small style="font-size: 0.85em">
+                        *[Open Source @ Github](https://github.com/Huxpro/js-module-7day)*
+                        </small>
+                    </script>
+                </section>
+                
+                <section style="text-align: left;">
+                    <h1>THE END</h1>
+
+                    <h5>黄玄@FEI</h5>
+                    <small>
+                        <a href="http://huangxuan.me">Blog</a> /
+                        <a href="http://weibo.com/huxpro">@Huxpro</a> /
+                        <a href="https://github.com/huxpro">GitHub</a> /
+                        <a href="http://www.zhihu.com/people/huxpro">知乎</a>
+                    </small>
+                </section>
+            </div>
+        </div>
+
+        <pre style="display:none"><code> force highlight.js work </code></pre>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+
+            // Full list of configuration options available at:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+                transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                // Optional reveal.js plugins
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true },
+                    { src: 'plugin/notes/notes.js', async: true }
+                ]
+            });
+
+        </script>
+
+        <script type="text/javascript">
+            function codeEditor(){
+                var nodes = document.querySelectorAll("code");
+                for (var i = 0; i < nodes.length; i++) {
+                    nodes[i].setAttribute("contenteditable", '');
+                }
+                console.log('code editable now.');
+            }
+            window.codeEditor = codeEditor;
+
+            document.addEventListener('DOMContentLoaded', function(){
+                setTimeout(function(){
+                    codeEditor();
+                },1000)
+            })
+        </script>
+    </body>
+</html>
