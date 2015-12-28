@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
 
-        <title>FEI-Mark III</title>
+        <title>CSS Modular 2015</title>
 
         <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
         <meta name="author" content="Hakim El Hattab">
@@ -36,23 +36,27 @@
     </head>
 
     <body>
-    
-        <div class="reveal">
 
+        <div class="reveal">
+            <style>
+                a img:hover{
+                    opacity: 0.7 !important;
+                }
+            </style>
             <!-- Any section element inside of this container is displayed as a slide -->
             <div class="slides">
 
                 <section data-markdown>
                     <script type="text/template">
-                        # FEI - *Mark III*
-                        ### 前端神盾局演讲主题与规范
+                        # *CSS <small style="vertical-align: baseline;">still</small> Sucks* 2015
+                        ### and how we try to work around it
 
-                        <small style="margin-top:17px;">
-                            <a href="#/1">黄玄@FEI</a> 
+                        <small style="margin-top:27px;line-height:1.3em;">
+                            <a href="#/1">黄玄@wepiao<br>Dec 2015</a>
                         </small>
                     </script>
                 </section>
-                
+
                 <section data-markdown>
                     <script type="text/template">
                         <img src="attach/hux.jpg" style="
@@ -63,9 +67,14 @@
                             clip-path: polygon(50% 0, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
                         "/>
 
-                        ## 黄玄
-
-                        在这里描述你自己
+                        ```
+                        export default () => (
+                            <Huxpro name='黄玄'>
+                                <Wepiao> Frontend Infrastructure Team @2015 </Wepiao>
+                                <Taobao> AliTrip Mobile HTML5 Team @2014 </Taobao>
+                            </Huxpro>
+                        )
+                        ```
 
                         <small>
                             <a href="http://huangxuan.me">Blog</a> /
@@ -78,137 +87,1269 @@
 
                 <section data-markdown>
                     <script type="text/template">
-                        ### 副标题
+                        <img src="attach/joke/css_is_awesome.png" style="
+                            height: 200px;
+                            background: white;
+                            padding: 10px;
+                        " />
 
-                        # *Header One*
+                        # *Document Times*
+
+                        HTML is born for document in 1993
                     </script>
                 </section>
 
                 <section data-markdown>
                     <script type="text/template">
-                        <img src="attach/joke/js.jpg" style="width:360px;" />
+                        ## *Cascading* Style Sheet
 
-                        - 图片与列表
-
-                        - Example *List Item*
+                        层叠样式表
                     </script>
                 </section>
 
                 <section data-markdown>
                     <script type="text/template">
-                        Write Code
+                        ### <em style="color:gold;">Priority</em> & *Inheritance*
 
-                        ```javascript
-                        function foo(){
-                            //...
-                        }
-                        function bar(){
-                            //...
-                        }
+                        ```html
+                        ### <em class="b" id="g">Priority</em> & *Inheritance*
                         ```
 
-                        这个会后出来
+                        ```css
+                        h3 {
+                            color: white;
+                            font-size: 1.3em;
+                        }
+                        em {
+                            color: #ffef99;
+                            font-style: italic;
+                        }
+                        .b { color: blue; }
+                        #g { color: gold; }
+                        ```
+
+                        *we are good at cascading!*
+                        <!-- .element: class="fragment" -->
+
+                        *thinking globally makes sence*
                         <!-- .element: class="fragment" -->
                     </script>
                 </section>
 
                 <section data-markdown>
                     <script type="text/template">
-                        再来一个例子：*Namespace* 模式
+                        ### we have got great
 
-                        ```javascript
-                        var MYAPP = {
-                            foo: function(){},
-                            bar: function(){}
-                        }
-
-                        MYAPP.foo();
-                        ```
-
-                        - 出来
-                        <!-- .element: class="fragment" -->
-
-                        - 再出来
-                        <!-- .element: class="fragment" -->
-                    </script>
-                </section>
-
-                <section data-markdown data-background="attach/bm_1.jpg"
-                    style="background:rgba(0,0,0,0.8)"
-                >
-                    <script type="text/template">
-                        - 来个背景图片！！
-
-                        - 也可以用视频
-
-                        - 甚至 GIF
+                        # *Frameworks*
                     </script>
                 </section>
 
                 <section data-markdown>
                     <script type="text/template">
-                        尽量不要出现 HTML，实在需要的话用 Jade 代替
+                        <a style="
+                            display:inline-block;
+                            width: 70%;
+                            margin-left:-50%;
+                        " href="http://getbootstrap.com/" target="_blank">
+                            <img class="logo" src="attach/logo/bootstrap.png" />
+                        </a>
+                        <a style="
+                            display:inline-block;
+                            width: 70%;
+                            margin-right:-50%;
+                            margin-left: -5%;
+                        " href="http://foundation.zurb.com/" target="_blank">
+                            <img class="logo" src="attach/logo/foundation.png" />
+                        </a>
 
-                        ```
-                        script(src="LAB.js" async)
-                        ```
-
-                        ```javascript
-                        $LAB.script("framework.js").wait()
-                            .script("plugin.framework.js")
-                            .script("myplugin.framework.js").wait()
-                            .script("init.js");
-                        ```
+                        <p style="margin-top: -40px;">*Bootstrap and Foundation*</p>
                     </script>
                 </section>
 
                 <section data-markdown>
                     <script type="text/template">
-                        ## [CommonJS](http://www.commonjs.org/) - API Standard
+                        ### and good
 
-                        (2009.08)
-
-                        <img src="attach/commonjs-logo.png" class="logo" style="max-width:200px" />
-
-                        > 在这里介绍类库！
+                        # *Style Guide*
                     </script>
                 </section>
 
                 <section data-markdown>
                     <script type="text/template">
-                        ### 有时候你会需要表格
+                        ## *[OOCSS](https://github.com/stubbornella/oocss/wiki)* - Object Oriented CSS
 
-                        <br>
+                        (Dec 2011)
 
-                         硬盘 I/O | | 网速 I/O
-                        -----|------- | ------|-------
-                        HDD: | *100 MB/s*  | ADSL: | *4 Mb/s*
-                        SSD: | *600 MB/s*  | 4G: | *100 Mb/s*
-                        SATA-III:| *6000 Mb/s*  | Fiber: | *100 Mb/s*
+                        - Separate *structure* and *skin* <br>
+                        <small>
+                            Avoid the descendent selctor (.side h3)<br>
+                            class over id for reusablity<br>
+                            abstract the structural styles
+                        </small>
 
+                        - Separate *container* and *content* <br><small>rarely use location-dependent styles</small>
+
+                        <p class="fragment">Reuse, Reuse, Reuse...hmm</p>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        [What is meant by an “object” in OOCSS? →](https://github.com/stubbornella/oocss/wiki/FAQ#what-is-meant-by-an-object-in-oocss)
+
+                        <small style="margin-top: 10px;">A Common Case you may be familier with</small>
+
+
+                        ```
+                        <div class="mod">
+                            <div class="inner">
+                                    <div class="hd">Block Head</div>
+                                    <div class="bd">Block Body</div>
+                                    <div class="ft">Block Foot</div>
+                            </div>
+                        </div>
+                        ```
+
+                        - [Decouple HTML from CSS →](http://www.smashingmagazine.com/2012/04/decoupling-html-from-css/)
+                        - [An Introduction To OOCSS →
+](http://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/)
+
+                        <p class="fragment">Anyway...It do make some sense </p>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## *[SMACSS](https://smacss.com/)* - Scalable and Modular Architecture for CSS
+
+                        (2012)
+
+                        - Categorizing CSS Rules <br><small>*Base, Layout, Module, State, Theme*</small>
+                        - Naming Rules<br><small>*easier to clarity*</small>
+                        - Minimizing the Depth<br><small>*decrease reliance on specific HTML*</small>
+                    </script>
+                </section>
+
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ### Even amazing
+
+                        # *Pre-processers*
                     </script>
                 </section>
 
 
                 <style>
-                    .bloom{
-                        transform: scale(0);
-                        transition: transform 0.7s cubic-bezier(0.68, 0.04, 0.49, 0.95);
+                    .Dark small,
+                    .Dark p{
+                        color: #222;
                     }
-                    .present .bloom{
-                        transform: scale(1);
+                    .Dark__time{
+                        position: absolute;
+                        bottom: -20px;
+                        left: 70px;
                     }
                 </style>
-                <section data-markdown>
+                <section data-markdown data-background="#ddd" class="Dark">
                     <script type="text/template">
-                        <div class="bloom">
-                            <p>如果无聊的话你可以自己加动画或者自定义样式</p>
-                            <h1>*Bloom!*</h1>
-                            <small>不过请写在行内，永远不要改引用的 CSS</small>
-                        </div>
+                        <a style="margin:30px;" href="http://stylus-lang.com/">
+                            <img class="logo" width="200" src="attach/logo/stylus.svg" />
+                            <small data-fragment-index="2" class="Dark__time fragment">2010</small>
+                        </a>
+                        <a style="margin:50px;" href="http://sass-lang.com/">
+                            <img class="logo" width="230" src="attach/logo/sass.svg" />
+                            <small data-fragment-index="3" class="Dark__time fragment"><b>2006!!!</b></small>
+                        </a>
+                        <a style="margin:10px;" href="http://lesscss.org/">
+                            <img class="logo" width="180" src="attach/logo/less.png" />
+                            <small data-fragment-index="2" class="Dark__time fragment">2009</small>
+                        </a>
+
+                        <p class="fragment" data-fragment-index="1" style="
+                            margin-top: 70px;
+                            font-size: 0.8em;
+                            font-style: italic;
+                        ">You can't imagine how early they first appeared!</p>
+                        <h3 class="fragment" style="color:red" data-fragment-index="4">I ❤︎ THEM!</h3>
                     </script>
                 </section>
-                
+
+                <section data-markdown>
+                    <script type="text/template">
+                        - Variables<br><small>*easy to standardize, theming*</small>
+                        - Nesting<br><small>*nested selctors are "scoped" (also increase specificity)*</small>
+                        - Mixins<br><small>*predictable and flexible code repetitions*</small>
+                        - Selector inheritance<br><small>*DRY: Dont Repeat Yourself*</small>
+                        - Language Enhancement<br><small>*import, math, loop, operators...*</small>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ### One more thing
+
+                        # *[PostCSS](https://github.com/postcss/postcss)*
+
+                        (Since Sep 2013)
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        Everyone should hear about
+
+                        <small>[not? watch may another talk](http://huangxuan.me/wepiao-edge/index.html#/9)</small>
+
+                        <h2 style="margin-top:-25px;"> *Autoprefixer* </h2>
+
+
+                        <img src="attach/autoprefixer.svg" class="logo" style="width:250px;margin-bottom:20px" />
+
+                        <p class="fragment">Yes, one of the most famous<br>*PostCSS Plugins!* <p>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        *Well, Officially<br>PostCSS is Not a Post-processor*
+
+                        > It is time admit my mistakes. “Postprocessor” term was bad. PostCSS team stoped to use it.
+                        >
+                        > <small>— PostCSS (@PostCSS) July 28, 2015</small>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        - And...
+                        - PostCSS is *NOT* a Pre-processor
+                        - PostCSS is *NOT* “Future Syntax”
+                        - PostCSS is *NOT* a Clean Up / Optimization Tool
+                        - PostCSS is *NOT* Any One Thing
+
+                        *But PostCSS plugins can do ALL those cool shit...*
+
+                        <img class="fragment" style="margin-top:-400px;" src="attach/joke/wtf.jpg" />
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        <img class="logo" height="150" src="attach/logo/postcss.svg" />
+
+                        <blockquote style="font-size: 0.8em; padding: 20px; margin-bottom:50px;">PostCSS is a tool for transforming CSS with JS plugins. These plugins can support variables and mixins, transpile future CSS syntax, inline images, and more.</blockquote>
+
+                        [PostCSS is "CSS and beyond" → ](http://webdesign.tutsplus.com/tutorials/postcss-deep-dive-what-you-need-to-know--cms-24535)
+
+                        <p class="fragment">
+                            In my view, the Babel and Webpack for CSS
+                            <br><small>we will keep mentioning it...</small>
+                        </p>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Everything is good <em class="fragment">until...</em>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        <img src="attach/joke/css_sucks_cup.jpg" style="
+                            height: 200px;
+                            background: white;
+                            padding: 10px 50px;
+                        " />
+
+                        # *Application Times*
+
+                        After 22 years evolution...
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## *Single* Page Application
+
+                        单页面应用
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Styling *Components*
+
+                        组件样式内聚
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        <img class="logo" height="550" src="attach/7_problems_css.jpg" />
+
+                        <small style="margin-top:-15px;">[2014.11 problems with CSS for building larger applications - NationJS @vjeux →](https://speakerdeck.com/vjeux/react-css-in-js)</small>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Let's look at *future!*
+
+                        be future-proofing
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        #*[Shadow DOM](http://www.w3.org/TR/shadow-dom/)*
+                        provides encapsulation for the JavaScript, CSS, and templating in a *Web Component*.
+
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        <img class="logo" src="attach/shadow-dom.png" />
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        # *CSS "4"*
+
+                        - [Scoped CSS (the `scoped` attr) ](https://html.spec.whatwg.org/multipage/semantics.html#attr-style-scoped)
+                        - [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/)
+                        - [@scope](https://drafts.csswg.org/css-scoping/#scope-atrule)
+                        - [:scope](https://drafts.csswg.org/selectors-4/#the-scope-pseudo)
+
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        <img class="logo" src="attach/scoped-css.png" />
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        <img src="attach/joke/backtofuture.jpg" height="300"/>
+                        <!--<img src="attach/joke/5.jpg" height="250" />-->
+
+                        > Well...future is still future.
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## Let's back to *Today.*
+
+                        when we talk about "today", <br>what we actually mean is community...
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        # *Naming Convention*
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        <img height="350" style="margin-top:-50px;" src="attach/joke/long-name.jpg" />
+
+                        ### Believe me, This is a *long* story
+
+                        ```
+                        .TheStory__ofNamingConvention--whateverYouChoose.is-kindsOfLooong{}
+                        ```
+                        <!-- .element: class="fragment" -->
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## *[BEM](https://en.bem.info/method/key-concepts/)* - “block, element, modifier”
+
+                        (2012)
+
+                        - First appeared in 2009 by [Yandex](https://www.yandex.com/)<br>
+                        <small>*[The history of BEM methodology (from 2005) →](http://www.smashingmagazine.com/2013/02/the-history-of-the-bem-methodology/)*
+                        </small>
+
+                        - Parts of BEM webapp framework<br>
+                        <small>*[BEM official site →](https://en.bem.info/)*
+                        <br>*[The original naming convention part is not clear enough →](https://en.bem.info/method/naming-convention/)*
+                        </small>
+
+                        - Honed by [@Nicolas](https://github.com/necolas) as naming pattern<br>
+                        <small>*[2012.03 About HTML semantics and front-end architecture →](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/)*
+                        <br>*[2012.04 A New Front-End Methodology: BEM →](http://www.smashingmagazine.com/2012/04/a-new-front-end-methodology-bem/)*
+                        <br>*[2013.01 MindBEMding – getting your head round BEM syntax →](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)*
+                        </small>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        `.block__element--modifier`
+
+                        <img height="300" class="logo" src="attach/logo/bem.png" />
+
+                        ```
+                        .block{}
+                        .block__element{}
+                        .block--modifier{}
+                        .block__element--modifier{}
+                        ```
+
+                        check [getBEM.com](http://getbem.com/) to get started
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        Let's draw a *BEMed Button!*<br><small>drawing button is the "hello world" of a styling tool</small>
+
+                        ```css
+                        .slds-button{}                   /*block*/
+                        .slds-button--inverse{}          /*inverse modifier*/
+                        .slds-button__icon{}             /*icon element in block*/
+                        .slds-button__icon--left{}       /*icon element in the left*/
+                        .slds-button__icon--right{}      /*icon element in the right*/
+                        ```
+
+                        ```html
+                        <button class="slds-button">normal</button>
+                        <button class="slds-button slds-button--inverse">inverse</button>
+                        <button class="slds-button">button with a right icon
+                            <svg class="slds-button__icon slds-button__icon--right"></svg>
+                        </button>
+                        ```
+
+                        <p class="fragment" style="margin-top:40px; line-height:1em;">
+                            <small>Uuuugly? This is a real-world example</small>
+                            <br>[Button - "Salesforce design system" → ](https://www.lightningdesignsystem.com/components/buttons)
+                            <br><small style="line-height:2em;">[Building an Enterprice CSS Framework →](https://medium.com/salesforce-ux/building-an-enterprise-framework-is-hard-1e8d8b33e082)</small>
+                        </p>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ### [‘Why BEM?’ in a nutshell →](https://medium.com/@DECAF/why-bem-in-a-nutshell-4ee79bf04179#.awzu3knml)
+
+                        - BEM provide "scope"<br>
+                            <small>*[2012.02 Scope CSS classes with prefixes (from chained classes) →](http://markdotto.com/2012/02/16/scope-css-classes-with-prefixes/)*
+                            <br>*[2013.05 ‘Scope’ in CSS (from Nesting to BEM) →](http://csswizardry.com/2013/05/scope-in-css/)*
+                            </small>
+
+                        - BEM stop specificity wars<br>
+                            <small>*[2013.05 ‘Scope’ in CSS (nesting unnecessarily increase specificity) →](http://csswizardry.com/2013/05/scope-in-css/)*
+                            <br>*[2015.09 Building an Enterprice CSS Framework →
+                            <br>(the most frustrating part of CSS is — the C. Cascading) ](https://medium.com/salesforce-ux/building-an-enterprise-framework-is-hard-1e8d8b33e082#.z1xdu3t0w)*
+                            </small>
+
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ### decrease cascading
+
+
+                        ```css
+                        /* Bad */
+                        .block .element{}        /* nesting */
+                        .element.modifier{}     /* chained */
+
+                        /* Good */
+                        .block__element{}
+                        .element--modifier{}
+                        ```
+
+                        <blockquote class="fragment" style="font-size: 0.7em;">Why not use element type selectors with child or sibling combinators (like *ul > li + li*) to avoid inheritance issues?</blockquote>
+
+                        <p class="fragment" style="font-size:0.8em;">Get loose coupled CSS from HTML! <br>[Remember OOCSS? →](#/9)</p>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        <blockquote style="font-size: 0.8em;">Nesting is such a brilliant feature of pre-processors! <br>*With BEM it sucks.*</blockquote>
+
+                        ```scss
+                        .block{
+                            .element{
+                                &.modifier{ color: red; }
+                            }
+                            .modifier{ color: blue; }
+                        }
+
+                        // Generates
+                        .block .element.modifier{ color: red; }
+                        .block .modifier{ color: blue; }
+
+                        // hmm...what's the color when you use .modifier?
+                        ```
+
+                        <h3 class="fragment">*Is It Real?*</h3>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        [Sass 3.3 supports BEM officially! - Sass Blog](http://sass.logdown.com/posts/184094-sass-33-is-released)
+
+                        <blockquote style="font-size: 0.6em;">*[2014.03]* "With the rise in popularity of BEM, OOCSS, and SMACSS, people became more and more interested in adding suffixes to classes." </blockquote>
+
+                        ```scss
+                        .block{
+                            &__element{
+                                &--modifier{ color: red; }
+                            }
+                            &--modifier{ color: blue; }
+                        }
+
+                        // Generates
+                        .block__element--modifier{ color: red; }
+                        .block__modifier{ color: blue; }
+                        ```
+
+                        <h3 class="fragment">*perfect flat!!*</h3>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        I want to <mark>highlight</mark> this person:
+
+                        <h3 class="fragment"> [Nicolas@Twitter](https://github.com/necolas)</h3>
+
+                        - normalize.css
+                        - react-native-web
+
+                        [About HTML semantics and front-end architecture →](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/)
+
+                        [[Youtube] Adaptation and Components →](https://www.youtube.com/watch?v=m0oMHG6ZXvo)
+                        <br><small class="fragment">In this video, he introduce us...</small>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## *[SUIT CSS](http://suitcss.github.io/)* - Style for components
+
+                        (2014)
+
+                        - One of BEM variant, thinking in components<br>
+                        <small>*[SUIT CSS naming conventions →](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md#is-stateOfComponent)*
+                        <br>*PascalCase, camelCase, [Utilities](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md#utilities) and [StateOfComponent](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md#componentnameis-stateofcomponent)*
+                        </small>
+
+                        - CSS [preprocessor](https://github.com/suitcss/preprocessor) (based on PostCSS)<br>
+                        <small>
+                            *Leverage Future CSS and Modern toolchain: <br>autoprefixer/import/custom-properties/calc/custom-media*
+                            <br>*Encapsulation testing based on [postcss-bem-linter](https://github.com/postcss/postcss-bem-linter)*
+                        </small>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        Stop your long story!
+                        ## *Why not give up CSS entirely?*
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        <img src="attach/joke/scared.gif" height="400"/>
+
+                        WAT?
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ### why not?
+                        # *CSS in JS*
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        Story back to crazy facebook
+
+                        <img class="logo" style="height:400px;" src="attach/cssinjs.jpg" />
+
+                        <small style="margin-top:-15px;">[2014.11 React: CSS in JS @vjeux →](https://speakerdeck.com/vjeux/react-css-in-js)<br>
+                            <span class="fragment" style="
+                                font-size:1.3em;
+                                line-height:2;
+                            ">This talk is <mark>INSANE</mark> and you had better go through it yourself
+                            </span>
+                        </small>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        *This idea just erupted!*
+
+                        <img class="logo" style="height:400px;" src="attach/inlinestyletalk.jpg" />
+
+                        <small style="margin-top:-15px;">[2015.07 [Youtube][ReactEurope] Michael Chan -<br>Inline Styles: themes, media queries, contexts, & when it's best to use CSS →](https://www.youtube.com/watch?v=ERB1TJBn32c&list=LLega3FPPCEThfUqH1cxsq5w&index=1)<br>
+                            <span class="fragment" style="
+                                font-size:1.3em;
+                                line-height:2;
+                            ">The BEST talk I watched about inline styles
+                            </span>
+                        </small>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        [Inline Styles - React Doc](https://facebook.github.io/react/tips/inline-styles.html)
+
+                        <blockquote style="font-size:0.85em;">The current set of tooling for this approach is yet to properly support progressive enhancement *(support for media queries, pseudo classes and sibling selectors is patchy, at best)*,<br> but this is an area that is showing a lot of promise.</blockquote>
+
+                        <p style="font-size: 0.8em;">[2015.04 SEEK UI Engineering - <br>Block, Element, Modifying Your JavaScript Components →](https://medium.com/seek-ui-engineering/block-element-modifying-your-javascript-components-d7f99fcab52b#.5gbtdhyod)<p>
+
+                        <small class="fragment">
+                            Remember *"SEEK UI Engineering"*, you will know...
+                        </small>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ### *BLOOOOOM! Libs come to help*<br>
+                        <small>Bunch of CSS in JS Libs for React...</small>
+
+                        - [Radium →](http://stack.formidable.com/radium/)<br>
+                        <small>*Most popular React Component Styling Library*</small>
+                        - [React Style →](https://github.com/js-next/react-style)<br>
+                        <small>*same syntax as StyleSheet.create from React Native*</small>
+                        - [JSX Style →](https://github.com/petehunt/jsxstyle)<br>
+                        <small>*props as inline style API*</small>
+                        - .....
+
+                        <p style="font-size: 0.7em;">[Radium - Comparison of CSS in JS Libraries for React → ](https://github.com/FormidableLabs/radium/tree/master/docs/comparison)</p>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        *Quick Look*
+
+                        <img class="logo" style="height:400px;" src="attach/radium.jpg" />
+
+                        <small style="margin-top:-15px;">[2015.07 [Youtube] Michael Chan -<br>Inline Styles: themes, media queries, contexts, & when it's best to use CSS →](https://www.youtube.com/watch?v=ERB1TJBn32c&list=LLega3FPPCEThfUqH1cxsq5w&index=1)<br>
+                            <span class="fragment" style="
+                                font-size:1.3em;
+                                line-height:2;
+                            ">NOT BAD!
+                            </span>
+                        </small>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        *Problem solved!*
+
+                        <img class="logo" style="height:400px;" src="attach/cssinjspro.jpg" />
+
+                        <small style="margin-top:-15px;">[2014.11 React: CSS in JS @vjeux →](https://speakerdeck.com/vjeux/react-css-in-js)<br>
+                            <span class="fragment" style="
+                                font-size:1.3em;
+                                line-height:2;
+                            ">And supporters hold that [React Native use it](https://facebook.github.io/react-native/docs/style.html#content)
+                            </span>
+                        </small>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ### *Caaaaaaaalm Down!*<br>
+                        <small>and <del>learn javascript</del> listen some negative voice...</small>
+
+                        - [2015.04 React Inline Styles are Fundamentally Flawed →](https://byjoeybaker.com/react-inline-styles)
+                        - [2015.05 Against CSS in JS - @keithjgrant →](http://keithjgrant.com/posts/against-css-in-js.html)
+                        - [2015.05 Into the Future of CSS - @keithjgrant →](http://keithjgrant.com/posts/into-the-future-of-css.html)
+                        - [2015.06 The Debate Around “Do We Even Need CSS Anymore?” →](https://css-tricks.com/the-debate-around-do-we-even-need-css-anymore/)
+
+
+                        <p class="fragment" style="margin-top:30px;">
+                            Don't forget<br>*Learning Curve & Migration Costs*
+                        </p>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        It's good, but right now it looks way too
+                        ##  *overengineered* <span class="fragment">and *Unstable!*</span>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ### The community is insane...
+                        # *[CSS Modules](http://glenmaddern.com/articles/css-modules)*
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        <a target="_blank"  href="https://medium.com/seek-ui-engineering/the-end-of-global-css-90d2a4a06284#.ytlydt4cu">
+                            <img class="logo fragment grow" src="attach/endofglobalcss.png" />
+                        </a>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        <img width="400" src="attach/joke/unbelievable.gif" />
+                        <h3>Believe me, It's *unbelievable*</h3>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        #### *1. Local by default*<br>
+                        <small>*Let's draw some buttons!*</small>
+
+                        ```css
+                        /* components/submit-button.css */
+                        .Button { /* all styles for Normal */ }
+                        .Button--disabled { /* overrides for Disabled */ }
+                        .Button--error { /* overrides for Error */ }
+                        .Button--in-progress { /* overrides for In Progress */
+                        ```
+                        <small>Before CSS Modules</small>
+
+
+                        ```css
+                        /* components/submit-button.css */
+                        .normal { /* all styles for Normal */ }
+                        .disabled { /* all styles for Disabled */ }
+                        .error { /* all styles for Error */ }
+                        .inProgress { /* all styles for In Progress */
+                        ```
+                        <small>With CSS Modules</small>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        *Time for JavaScript*
+
+                        ```javascript
+                        /* components/submit-button.js */
+                        import styles from './submit-button.css';
+
+                        buttonElem.outerHTML = `
+                          <button class=${styles.normal}>Submit</button>
+                        `
+                        ```
+                        <small>↓ time for magic </small>
+
+                        ```
+                        <button class="components_submit_button__normal__abc5436">
+                          Processing...
+                        </button>
+                        ```
+                        <!-- .element: class="fragment" -->
+
+                        <p class="fragment">
+                            *BLOOOOOOOM!*<br>
+                            Did you see the classnames? It's <mark>HASHED!</mark>
+                        </p>
+                        </div>
+
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        #### *2. Composition is everything*<br>
+                        <small>*shared styles between all the states*</small>
+
+                        ```javascript
+                        /* BEM Style */
+                        innerHTML = `<button class="Button Button--in-progress">`
+
+                        /* CSS Modules */
+                        innerHTML = `<button class="${styles.inProgress}">`
+                        ```
+                        <small>each class should contain all the styles</small>
+
+
+                        ```css
+                        .common {
+                          /* all the common styles you want */
+                        }
+                        .inProgress {
+                          composes: common;    /* similar to Sass @extend */
+                          /* anything that only applies to In Progress */
+                        }
+                        ```
+                        <small>CSS Modules changes which classes are exported to JavaScript.</small>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        *Under the hood*
+
+                        ```css
+                        .common { /* font-sizes, padding, border-radius */ }
+                        .normal { composes: common; /* blue color, light blue background */ }
+                        .error { composes: common; /* red color, light red background */ }
+                        ```
+
+                        ```css
+                        .components_submit_button__common__abc5436 { /* font-sizes, padding, border-radius */ }
+                        .components_submit_button__normal__def6547 { /* blue color, light blue background */ }
+                        .components_submit_button__error__1638bcd { /* red color, light red background */ }
+                        ```
+
+                        <small>In your JS code, import styles from "./submit-button.css" returns:</small>
+
+                        ```javascript
+                        styles: {
+                          common: "components_submit_button__common__abc5436",
+                          normal: "components_submit_button__common__abc5436 components_submit_button__normal__def6547",
+                          error: "components_submit_button__common__abc5436 components_submit_button__error__1638bcd"
+                        }
+                        ```
+                        <small>that's how we get multiple class rendered into the DOM.</small>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        #### *3. Sharing between files*<br>
+                        <small>*@import or require dependencies*</small>
+
+                        ```css
+                        /* colors.css */
+                        .primary {
+                          color: #720;
+                        }
+                        .secondary {
+                          color: #777;
+                        }
+                        /* other helper classes... */
+                        ```
+
+                        ```css
+                        /* submit-button.css */
+                        .common { /* font-sizes, padding, border-radius */ }
+                        .normal {
+                          composes: common;
+                          composes: primary from "../shared/colors.css";
+                        }
+                        ```
+                        <small>Influencer: [Smarter CSS(SCSS) builds with Webpack](http://bensmithett.com/smarter-css-builds-with-webpack/)</small>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        #### *4. Single responsibility modules*<br>
+                        <small>*@mixin also has a replacement*</small>
+
+                        ```css
+                        .element {
+                          composes: large from "./typography.css";
+                          composes: dark-text from "./colors.css";
+                          composes: padding-all-medium from "./layout.css";
+                          composes: subtle-shadow from "./effect.css";
+                        }
+                        ```
+
+                        ```css
+                        /* this short hand: */
+                        .element {
+                          composes: padding-large margin-small from "./layout.css";
+                        }
+
+                        /* is equivalent to: */
+                        .element {
+                          composes: padding-large from "./layout.css";
+                          composes: margin-small from "./layout.css";
+                        }
+                        ```
+                    </script>
+                </section>
+
+                <section>
+                    <svg style="height: 500px;" id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="1e3" viewBox="0 0 1000 1000" width="1e3" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                             <g id="layer1" transform="translate(3.7129 -62.36)">
+                              <g id="flowRoot3336" transform="matrix(1.8595,0,0,1.8595,-30.174,333.87)">
+                               <path fill="#fff" stroke="none" id="path4379" d="m105.49 108.89q12.261 0 19.028 6.46 6.7676 6.46 7.5146 14.678h-8.5254q-1.4502-6.2402-5.8008-9.8877-4.3066-3.6475-12.129-3.6475-9.5361 0-15.425 6.7236-5.8447 6.6797-5.8447 20.522 0 11.338 5.2734 18.413 5.3174 7.0312 15.82 7.0312 9.668 0 14.722-7.4268 2.6807-3.9111 3.999-10.283h8.5254q-1.1426 10.195-7.5586 17.095-7.6904 8.3057-20.742 8.3057-11.25 0-18.896-6.8115-10.063-9.0088-10.063-27.817 0-14.282 7.5586-23.423 8.1738-9.9316 22.544-9.9316zm-1.7578 0z"></path>
+                               <path fill="#fff" stroke="none" id="path4381" d="m149.04 154.37q0.30761 5.4932 2.5928 8.9209 4.3506 6.416 15.337 6.416 4.9219 0 8.9648-1.4062 7.8223-2.7246 7.8223-9.7559 0-5.2734-3.2959-7.5146-3.3398-2.1973-10.459-3.8232l-8.7451-1.9775q-8.5693-1.9336-12.129-4.2627-6.1524-4.043-6.1524-12.085 0-8.7012 6.0205-14.282 6.0205-5.5811 17.051-5.5811 10.151 0 17.227 4.9219 7.1192 4.8779 7.1192 15.645h-8.2178q-0.65918-5.1856-2.8125-7.9541-3.999-5.0537-13.579-5.0537-7.7344 0-11.118 3.252-3.3838 3.252-3.3838 7.5586 0 4.7461 3.9551 6.9434 2.5928 1.4062 11.733 3.5156l9.0527 2.0654q6.5478 1.4941 10.107 4.0869 6.1523 4.5264 6.1523 13.14 0 10.723-7.8223 15.337-7.7783 4.6143-18.105 4.6143-12.041 0-18.853-6.1523-6.8115-6.1084-6.6797-16.567h8.2178zm17.666-45.483z"></path>
+                               <path fill="#fff" stroke="none" id="path4383" d="m208.98 154.37q0.30762 5.4932 2.5928 8.9209 4.3506 6.416 15.337 6.416 4.9219 0 8.9648-1.4062 7.8223-2.7246 7.8223-9.7559 0-5.2734-3.2959-7.5146-3.3398-2.1973-10.459-3.8232l-8.7451-1.9775q-8.5693-1.9336-12.129-4.2627-6.1523-4.043-6.1523-12.085 0-8.7012 6.0205-14.282 6.0205-5.5811 17.051-5.5811 10.151 0 17.227 4.9219 7.1191 4.8779 7.1191 15.645h-8.2178q-0.65918-5.1856-2.8125-7.9541-3.999-5.0537-13.579-5.0537-7.7344 0-11.118 3.252-3.3838 3.252-3.3838 7.5586 0 4.7461 3.9551 6.9434 2.5928 1.4062 11.733 3.5156l9.0527 2.0654q6.5479 1.4941 10.107 4.0869 6.1523 4.5264 6.1523 13.14 0 10.723-7.8223 15.337-7.7783 4.6143-18.105 4.6143-12.041 0-18.853-6.1523-6.8115-6.1084-6.6797-16.567h8.2178zm17.666-45.483z"></path>
+                               <path fill="#fff" stroke="none" id="path4385" d="m78.063 223.14h12.524l18.545 54.58 18.413-54.58h12.393v64.556h-8.3057v-38.101q0-1.9775 0.0879-6.5478t0.0879-9.7998l-18.413 54.448h-8.6572l-18.545-54.448v1.9775q0 2.373 0.08789 7.251 0.13184 4.834 0.13184 7.1191v38.101h-8.3496v-64.556z"></path>
+                               <path fill="#fff" stroke="none" id="path4387" d="m181.2 221.39q17.095 0 25.312 10.986 6.416 8.5693 6.416 21.929 0 14.458-7.3389 24.038-8.6133 11.25-24.565 11.25-14.897 0-23.423-9.8438-7.6025-9.4922-7.6025-23.994 0-13.096 6.5039-22.412 8.3496-11.953 24.697-11.953zm0.87891 60.381q11.558 0 16.699-8.2617 5.1856-8.3057 5.1856-19.072 0-11.382-5.9766-18.325-5.9326-6.9434-16.26-6.9434-10.02 0-16.348 6.8994-6.3281 6.8555-6.3281 20.259 0 10.723 5.4053 18.105 5.4492 7.3389 17.622 7.3389zm-0.61523-60.381z"></path>
+                               <path fill="#fff" stroke="none" id="path4389" d="m248.09 280.23q4.4385 0 7.2949-0.92285 5.0977-1.7139 8.3496-6.5918 2.5928-3.9111 3.7354-10.02 0.65918-3.6475 0.65918-6.7676 0-11.997-4.79-18.633-4.75-6.63-15.34-6.63h-15.513v49.57h15.601zm-24.39-57.085h26.147q13.315 0 20.654 9.4482 6.5478 8.5254 6.5478 21.841 0 10.283-3.8672 18.589-6.8115 14.678-23.423 14.678h-26.06v-64.556z"></path>
+                               <path fill="#fff" stroke="none" id="path4391" d="m297.83 223.14v39.902q0 7.0312 2.6367 11.689 3.9111 7.0312 13.184 7.0312 11.118 0 15.117-7.6025 2.1533-4.1309 2.1533-11.118v-39.902h8.877v36.255q0 11.909-3.208 18.325-5.8887 11.689-22.236 11.689-16.348 0-22.192-11.689-3.208-6.416-3.208-18.325v-36.255h8.877zm16.567 0z"></path>
+                               <path fill="#fff" stroke="none" id="path4393" d="m353.21 223.14h8.7451v56.865h32.695v7.6904h-41.44v-64.556z"></path>
+                               <path fill="#fff" stroke="none" id="path4395" d="m404.14 223.14h47.065v7.9102h-38.54v19.6h35.64v7.4707h-35.64v21.885h39.199v7.6904h-47.725v-64.556zm23.862 0z"></path>
+                               <path fill="#fff" stroke="none" id="path4397" d="m469.13 266.87q0.30762 5.4932 2.5928 8.9209 4.3506 6.416 15.337 6.416 4.9219 0 8.9648-1.4062 7.8223-2.7246 7.8223-9.7559 0-5.2734-3.2959-7.5146-3.3398-2.1973-10.459-3.8232l-8.7451-1.9775q-8.5693-1.9336-12.129-4.2627-6.1523-4.043-6.1523-12.085 0-8.7012 6.0205-14.282 6.0205-5.5811 17.051-5.5811 10.151 0 17.227 4.9219 7.1191 4.8779 7.1191 15.645h-8.2178q-0.65918-5.1856-2.8125-7.9541-3.999-5.0537-13.579-5.0537-7.7344 0-11.118 3.252-3.3838 3.252-3.3838 7.5586 0 4.7461 3.9551 6.9434 2.5928 1.4062 11.733 3.5156l9.0527 2.0654q6.5479 1.4941 10.107 4.0869 6.1523 4.5264 6.1523 13.14 0 10.723-7.8223 15.337-7.7783 4.6143-18.105 4.6143-12.041 0-18.853-6.1523-6.8115-6.1084-6.6797-16.567h8.2178zm17.666-45.483z"></path>
+                              </g>
+                              <rect id="rect4156" height="695.02" width="695.02" stroke="#fff" y="214.85" x="72.492" stroke-width="5" fill="none"></rect>
+                             </g>
+                    </svg>
+
+                    <a href="http://glenmaddern.com/articles/css-modules">2015.08 Welcome to the future →</a>
+                    <br>
+                    <a href="https://github.com/css-modules/css-modules">github repos →</a>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        wanna listen some low-level stories?
+                        ### Let's Go A Little *Deeper*
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        <a target="_blank"  href="https://www.youtube.com/watch?v=zR1lOuyQEt8&index=2&list=LLega3FPPCEThfUqH1cxsq5w">
+                            <img class="logo" src="attach/caseforcssmodules.png" />
+                        </a>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        [Local Scope](https://github.com/webpack/css-loader#local-scope) changed everything<br>
+                        <small> new feature landed in webpack css-loader </small>
+
+                        ```javascript
+                        require('./MyComponent.css');
+
+                        // becomes...
+                        import styles from './MyComponent.css';
+                        ```
+
+                        ```javascript
+                        :local(.header) { ... }
+                        :local(.footer) { ... }
+
+                        // becomes...
+                        /* Globally unique classes */
+                        ._1rJwx92-gmbvaLiDdzgXiJ { ... }
+                        ._ah6Hch-gjsAdSE53CxzaEs { ... }
+                        ```
+
+                        <p class="fragment">NO MORE NAMING COLLISIONS!</p>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        Classname *Mapping*
+
+                        ```javascript
+                        // Styles object:
+                        {
+                          'header': '_1rJwx92-gmbvaLiDdzgXiJ',
+                          'footer': '_ah6Hch-gjsAdSE53CxzaEs'
+                        }
+                        ```
+
+                        ```javascript
+                        import styles from './MyComponent.css';
+
+                        export default () => (
+                          <div>
+                            <div className={styles.header}>...</div>
+                            <div className={styles.footer}>...</div>
+                          </div>
+                        );
+                        ```
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        <blockquote style="padding: 30px;">
+                            <h3 style="margin:0"> “What if locally scoped CSS <br>was the *default?*”</h3>
+                        </blockquote>
+
+                        and only global class need :global()
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ### [PostCSS-local-scope](https://github.com/css-modules/postcss-modules-local-by-default)<br><small>Turned .class into :local(.class) </small>
+
+                        <blockquote class="fragment" style="margin-bottom:50px;"> “I hope it’s ok if I integrate your postcss-local-scope module into the css-loader”<br>@SOKRA — MAY 24, 2015</blockquote>
+
+                        ### [css-loader?modules](https://github.com/webpack/css-loader#css-modules)<br><small>css-loader?modules&localIdentName=[name]__[local]___[hash:base64:5] </small>
+                        <!-- .element: class="fragment" -->
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        <a target="_blank"  href="https://www.youtube.com/watch?v=aIyhhHTmsXE&index=3&list=LLega3FPPCEThfUqH1cxsq5w">
+                            <img class="logo" src="attach/icss.png" />
+                        </a>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ### [Interoperable CSS](https://github.com/css-modules/css-modules)<br><small>low-level file format that enabled CSS Modules</small>
+
+                        <blockquote style="padding:20px 30px; margin-bottom: 40px;">That is now supported by default in Webpack & JSPM, and available with plugins for Browserify. *And it hopes to do for CSS what CommonJS did for JavaScript.*</blockquote>
+
+                        <a href="http://glenmaddern.com/articles/css-modules">[Youtube] 2015.10 CSSconf EU 2015 |<br>  Glen Maddern: Interoperable CSS →</a>
+                        <br><a href="https://github.com/css-modules/css-modules">github repos →</a>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ![](attach/joke/cheers.gif)
+
+                        hmm...seems perfect...
+                    </script>
+                </section>
+
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ### I Truly Love it *but*<br>
+                        <small>there is still something *trouble*...</small>
+
+                        - You can never override classes from another file<br>
+                        <small>
+                            *[Import className from fileName #40 →](https://github.com/css-modules/css-modules/issues/40)
+                            <br>Damn easy to override a class in old css by using selectors (.scope .be-overrode{})
+                            <br>With CSS Modules, a css file can never know the actual classname another css file*
+                        </small>
+
+                        - This is a half way between CSS and CSS-in-JS<br>
+                        <small>
+                            *Every style need to be set in .JS file, and some stuff can be only done in JS,<br>
+                            Which means all your CSS is highly coupled with your JS<br>
+                            There is still a expensive migration costs for old projects.<br>
+                            There is still a learning curve especially for [HTML/CSS-only Engineers](#/74)
+                            *
+                        </small>
+
+                        - Future of CSS? Or a present compromise.<br><small>*Until ICSS is officially inclued into CSS spec*</small>
+                    </script>
+                </section>
+
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ### They don't trouble JSer
+                        <small>It just force you thinking everthing in JavaScript and Components</small>
+
+                        > "Anyway, this all is *the cost of the encapsulation*. Which is harder, but absolutely better." - [#40]((https://github.com/css-modules/css-modules/issues/40)
+
+                        <p class="fragment" style="margin-top:40px;">
+                            But, what if there are [HTML/CSS Engineers](#/74) in the team?
+                            <br><small>It's very common. for example your designer can do CSS?</small>
+                        </p>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ### *HTML/CSS*-only Engineer
+
+                        I searched Linkedin
+
+                        <img src="attach/csser.jpg" style="margin-bottom:0px;"/>
+
+                        *PSD-to-HTML + SCSS + RWD + Git*<br><small>pretty nice!</small>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ### in China, we call it *Web Rebuild*
+
+                        Im confusing! where does this naming come from?
+
+                        <img class="fragment" src="attach/webrebuild.jpg" height="500"/>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        <img src="attach/joke/jonsnow.gif" height="300" />
+
+                        What the hell is this translating...
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ### we already saw its power
+                        # *PostCSS, again*
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ### *some nice idea*<br>
+                        <small>There are possibilities in PostCSS community I believed</small>
+
+                        - [CSS Next](http://cssnext.io/)<br>
+                        <small>
+                            *Use tomorrow's CSS syntax, today.*<br>
+                            *one of the ['Future CSS' postCSS plugins](https://github.com/postcss/postcss#future-css)*
+                        </small>
+
+                        - [PostCSS Auto Reset](https://github.com/maximkoretskiy/postcss-autoreset) <br>
+                        <small>
+                            *one of the ['End of Global CSS' postCSS plugins](https://github.com/postcss/postcss#end-of-global-css)*
+                        </small>
+
+                        - [Scoped CSS in Vue-loader](http://vuejs.github.io/vue-loader/features/scoped-css.html)<br>
+                        <small>*one of the BEST idea I have seen to solve the global css*</small>
+
+                        <p class="fragment" style="font-size: 0.8em;">too experimental to use in production...</p>
+                    </script>
+                </section>
+
+
+                <section data-markdown>
+                    <script type="text/template">
+                        Time to give my
+                        # *Opinionated Proposal*
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        - Inline CSS is not recommended.<br><small>*too extreme to use, at least for present*</small>
+
+                        - CSS Modules is for small and full-stack teams.<br><small>*everyone should know modern JavaScript well*</small>
+
+                        - Naming Convention is for big and tranditional teams.<br><small>*especially there is HTML/CSS engineers in your team, let them do what they do best*</small>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        Introducing My Naming Convention
+
+                        ## *Pages override Components*
+
+                        for multi-entries SPA
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        In multi-entries SPA
+
+                        <img class="logo" height="400" src="attach/spa.jpg" />
+
+                        - Pages share components with different business logic
+                        - The order of loading styles is dynamic
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ### 1. Scoping Components <br><small style="line-height:2em;">*CSS Blocks should only be used inside a component of the same name.*</small>
+
+                        ```scss
+                        // Component/index.scss
+                        .ComponentName {
+                            &--mofierName {}
+                            &__decendentName {
+                                &--modifierName {}
+                            }
+                            .isStateOfComponent {}
+                        }
+                        ```
+
+                        ```javascript
+                        // Component/index.js
+                        require('./index.scss');
+                        ```
+
+                        CSS is *always bundled* with components<br>(from loading, mount to unmount)
+                    </script>
+                </section>
+
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ### 2. Components can be Overrode by Pages <br><small style="line-height:2em;">*There is always requirements to rewrite styles of components in pages*</small>
+
+                        ```scss
+                        // Pages/PageA.scss
+                        #PageA {
+                            .pagelet-name {
+                                .pagelet-descendent-name {}
+                            }
+                            .ComponentName{ /* override */ }
+                        }
+                        ```
+
+                        ```javascript
+                        // Pages/index.js
+                        require('./PageA.scss');
+                        ```
+
+                        - *#Page* for absolutely scoping between pages
+                        - *.pagelet-name* should be lowercase to prevent conflicting with components
+
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ### Why POC?
+
+                        - It's technology-agnostic<br>
+                        <small>
+                            *One css framework can be played with whatever technology stacks*<br>
+                            *You can combined Scss, PostCSS and whatever you want*
+                        </small>
+
+                        - Solving problems, and easy<br>
+                        <small>
+                            *Makes reading and teamwork much easier*<br>
+                            *Get all benefit from BEM, SUITCSS and others*
+                        </small>
+
+                        - Leverage the power of cascading properly<br>
+                        <small>
+                            *Scoping components but allow reasonable overriding*<br>
+                            *It's pragmatic, flexible and hitting the sweet spot*
+                        </small>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        <blockquote style="padding: 30px;">
+                            <h3 style="margin:0"> “It was the best of times,  <br>it was the worst of times” </h3>
+                        </blockquote>
+                    </script>
+                </section>
+
                 <!--永远保留提问页面 -->
                 <section data-markdown>
                     <script type="text/template">
@@ -216,7 +1357,7 @@
                         Hey, don't be shy.
                     </script>
                 </section>
-                
+
                 <!--如果需要，可以替换上自己的二维码-->
                 <section data-markdown>
                     <script type="text/template">
@@ -233,11 +1374,13 @@
                         </small>
                     </script>
                 </section>
-                
+
                 <section style="text-align: left;">
                     <h1>THE END</h1>
 
-                    <h5>黄玄@FEI</h5>
+                    <h5>
+                        <a href="#/1">黄玄<small style="text-transform: none; vertical-align: baseline;">@wepiao.com</small></a>
+                    </h5>
                     <small>
                         <a href="http://huangxuan.me">Blog</a> /
                         <a href="http://weibo.com/huxpro">@Huxpro</a> /
@@ -263,6 +1406,17 @@
                 history: true,
                 center: true,
                 transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+                /**
+                 * hux add, than set to false.
+                 *
+                 * using iframe is a bad idea,
+                 * there are some site refuse to display (X-Frame-Options)
+                 * and anything loaded by iframe can not be cached.
+                 *
+                 * It's better to encourage user use "Command + Click" to open.
+                 */
+                previewLinks: false,
 
                 // Optional reveal.js plugins
                 dependencies: [
