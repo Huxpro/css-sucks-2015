@@ -810,6 +810,8 @@
                         <a target="_blank"  href="https://medium.com/seek-ui-engineering/the-end-of-global-css-90d2a4a06284#.ytlydt4cu">
                             <img class="logo fragment grow" src="attach/endofglobalcss.png" />
                         </a>
+
+                        <small style="margin-top:-60px;">*Post by "SEEK UI Engineering"!*</small>
                     </script>
                 </section>
 
@@ -1026,6 +1028,7 @@
                         <a target="_blank"  href="https://www.youtube.com/watch?v=zR1lOuyQEt8&index=2&list=LLega3FPPCEThfUqH1cxsq5w">
                             <img class="logo" src="attach/caseforcssmodules.png" />
                         </a>
+                        <small style="margin-top:-60px;">*History of CSS Modules*</small>
                     </script>
                 </section>
 
@@ -1223,9 +1226,12 @@
                         </small>
 
                         - [Scoped CSS in Vue-loader](http://vuejs.github.io/vue-loader/features/scoped-css.html)<br>
-                        <small>*one of the BEST idea I have seen to solve the global css*</small>
+                        <small>
+                            *one of the BEST idea I have seen to solve the global css*<br>
+                            *clever attribute selector*
+                        </small>
 
-                        <p class="fragment" style="font-size: 0.8em;">too experimental to use in production...</p>
+                        <p class="fragment" style="font-size: 0.8em;">too experimental to use in production...(except vue)</p>
                     </script>
                 </section>
 
@@ -1251,9 +1257,9 @@
                     <script type="text/template">
                         Introducing My Naming Convention
 
-                        ## *Pages override Components*
+                        ## *Pages override Components CSS*
 
-                        for multi-entries SPA
+                        for component-based multi-entries SPA
                     </script>
                 </section>
 
@@ -1275,7 +1281,6 @@
                         ```scss
                         // Component/index.scss
                         .ComponentName {
-                            &--mofierName {}
                             &__decendentName {
                                 &--modifierName {}
                             }
@@ -1289,6 +1294,11 @@
                         ```
 
                         CSS is *always bundled* with components<br>(from loading, mount to unmount)
+
+                        <small>
+                            [2015.05 Smarter CSS(SCSS) builds with Webpack → ](http://bensmithett.com/smarter-css-builds-with-webpack/)<br>
+                            [2015.04 Block, Element, Modifying Your JavaScript Components → ](https://medium.com/seek-ui-engineering/block-element-modifying-your-javascript-components-d7f99fcab52b#.3sp13jjpj)
+                        </small>
                     </script>
                 </section>
 
@@ -1320,7 +1330,7 @@
 
                 <section data-markdown>
                     <script type="text/template">
-                        ### Why POC?
+                        ### Why POCss?
 
                         - It's technology-agnostic<br>
                         <small>

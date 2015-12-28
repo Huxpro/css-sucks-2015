@@ -12,24 +12,24 @@
 - Document Times
     - Frameworks
     - Style Guide
-        - OOCSS
-        - SMACSS
-    - Pre-processer
-    - PostCSS
+        - **OOCSS**
+        - **SMACSS**
+    - **Pre-processer**
+    - **PostCSS**
 - Application Times
-    - Shadow DOM
-    - CSS "4"
+    - **Shadow DOM**
+    - **CSS "4"**
     - Naming Convention
-        - BEM
-        - SUIT
-    - CSS in JS
-    - CSS Modules  
+        - **BEM**
+        - **SUIT**
+    - **CSS in JS**
+    - **CSS Modules**  
         - Interoperable CSS
     - PostCSS, again
 - My Opinionated Proposal
-    - Page Override Components
+    - **POCss**
 
-## Page Override Components
+## POCss: Page Override Components CSS
 
 ### 1. Scoping Components <br><small style="line-height:2em;">*CSS Blocks should only be used inside a component of the same name.*</small>
 
@@ -73,19 +73,19 @@ require('./PageA.scss');
 
 ### Why POC?
 
-- It's technology-agnostic<br>
+- **It's technology-agnostic**<br>
 <small>
     *One css framework can be played with whatever technology stacks*<br>
     *You can combined Scss, PostCSS and whatever you want*
 </small>
 
-- Solving problems, and easy<br>
+- **Solving problems, and easy**<br>
 <small>
     *Makes reading and teamwork much easier*<br>
     *Get all benefit from BEM, SUITCSS and others*
 </small>
 
-- Leverage the power of cascading properly<br>
+- **Leverage the power of cascading properly**<br>
 <small>
     *Scoping components but allow reasonable overriding*<br>
     *It's pragmatic, flexible and hitting the sweet spot*
