@@ -760,7 +760,7 @@
                         <br>
                         <small>WAT!? It's non-semantics and a [anti-pattern →](http://hax.iteye.com/blog/497338)
                         <br>"Reinventing Inline CSS!"
-                        <br>Well, I hold similar POV[(1)](https://medium.com/@Huxpro/the-clarification-by-atomic-css-is-very-clear-but-can-not-persuade-me-d915f022d276#.59s329p95)[(2)](https://medium.com/@Huxpro/they-are-definitely-of-different-sharing-the-same-internal-evil-however-ead510fb817d#.iiia4fves) in the most beginning
+                        <br>Well, I hold similar POV [(1)](https://medium.com/@Huxpro/the-clarification-by-atomic-css-is-very-clear-but-can-not-persuade-me-d915f022d276#.59s329p95)[(2)](https://medium.com/@Huxpro/they-are-definitely-of-different-sharing-the-same-internal-evil-however-ead510fb817d#.iiia4fves) in the most beginning
                         </small>
 
                         - Better inline styling with *classes*<br>
@@ -775,6 +775,34 @@
 
                     </script>
                 </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## *For the end result*
+
+                        - Borrows many of pros from inline styles<br>
+                        <small>
+                            Stop specificity wars <br>
+                            Pure Presentational classes lead to<br>
+                            *=> Few content-derived class or context-based selector<br>*
+                            *=> Work around the global namespace and scope issues.*
+                        </small>
+
+                        - Classes is *static analysable*<br>
+                        <small>
+                            Dead code elimination possible <br>
+                            Classnames uglification/minification possible<br>
+                            Perfect compile-target [(react-native-web/styleSheet API)](https://github.com/necolas/react-native-web/blob/master/docs/guides/style.md)
+                        </small>
+
+                        [I should recall 'Atomic CSS is wrong' →](https://medium.com/@Huxpro/wish-i-get-your-point-82b4dccadca4#.gj38p5tlr)
+                        <small>separate the whole concept into two parts makes things clear<br>
+                          *The End Result* vs *"Authoring Time"*
+                         </small>
+
+                    </script>
+                </section>
+
 
                 <section data-markdown>
                     <script type="text/template">
@@ -1361,7 +1389,8 @@
 
                 <section data-markdown>
                     <script type="text/template">
-                      >   it’s not like one approach is de facto better than the other as this would depend on which factors are to be taken into consideration.
+                      >   it’s not like one approach is de facto better than the other as this would depend on *which factors are to be taken into consideration.*
+                      <br><br><small> @Thierry </small>
                     </script>
                 </section>
 
@@ -1512,11 +1541,11 @@
                     <h1>THE END</h1>
 
                     <h5>
-                        <a href="#/1">黄玄<small style="text-transform: none; vertical-align: baseline;">@wepiao.com</small></a>
+                        <a href="#/1">黄玄</a>
                     </h5>
                     <small>
                         <a href="http://huangxuan.me">Blog</a> /
-                        <a href="http://weibo.com/huxpro">@Huxpro</a> /
+                        <a href="http://weibo.com/huxpro">Weibo</a> /
                         <a href="https://github.com/huxpro">GitHub</a> /
                         <a href="http://www.zhihu.com/people/huxpro">知乎</a>
                     </small>
