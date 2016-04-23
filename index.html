@@ -51,12 +51,18 @@
                         # *CSS <small style="vertical-align: baseline;">still</small> Sucks* 2015
                         ### and how we try to work around it
 
-                        <small style="margin-top:27px;line-height:1.3em;">
-                            <a href="#/1">黄玄@wepiao<br>Dec 2015</a>
+                        <small style="margin-top:37px; line-height:1.5em;">
+                            <iframe frameborder="0" scrolling="0" width="91px" height="22px"
+                                style="vertical-align: -6px"
+                                src="https://ghbtns.com/github-btn.html?user=huxpro&amp;repo=css-sucks-2015&amp;type=star&amp;count=true">
+                            </iframe>
+                            <a href="#/1">@huxpro
+                            <br>
+                                NodeParty @Apr 2016 | Wepiao @Dec 2015
+                            </a>
                         </small>
 
-                        <iframe frameborder="0" scrolling="0" width="91px" height="22px" src="https://ghbtns.com/github-btn.html?user=huxpro&amp;repo=css-sucks-2015&amp;type=star&amp;count=true">
-                        </iframe>
+
                     </script>
                 </section>
 
@@ -72,16 +78,16 @@
 
                         ```
                         export default () => (
-                            <Huxpro name='黄玄'>
+                            <Huxpro zh='黄玄' en='Hux'>
                                 <Wepiao> Frontend Infrastructure Team @2015 </Wepiao>
-                                <Taobao> AliTrip Mobile HTML5 Team @2014 </Taobao>
+                                <Taobao> Alibaba Trip Mobile Team @2014 </Taobao>
                             </Huxpro>
                         )
                         ```
 
                         <small>
                             <a href="http://huangxuan.me">Blog</a> /
-                            <a href="http://weibo.com/huxpro">@Huxpro</a> /
+                            <a href="http://weibo.com/huxpro">Weibo</a> /
                             <a href="https://github.com/huxpro">GitHub</a> /
                             <a href="http://www.zhihu.com/people/huxpro">知乎</a>
                         </small>
@@ -181,18 +187,50 @@
                     <script type="text/template">
                         ## *[OOCSS](https://github.com/stubbornella/oocss/wiki)* - Object Oriented CSS
 
-                        (Dec 2011)
+                        ([Nicole Sullivan](http://www.stubbornella.org/) 2008)
 
+                        - *Class* everything for reusablity<br>
                         - Separate *structure* and *skin* <br>
                         <small>
-                            Avoid the descendent selctor (.side h3)<br>
-                            class over id for reusablity<br>
-                            abstract the structural styles
+                            Reuse visual feature as skins (mixable) <br>
+                            Structural semantics are provided by structural classes <br>
+                            Reference classes instead of HTML tags. (flexible HTML)<br>
                         </small>
 
-                        - Separate *container* and *content* <br><small>rarely use location-dependent styles</small>
+                        - Separate *container* and *content* <br>
+                        <small>
+                            Rarely use location-dependent styles <br>
+                            Classes over tags, avoid the descendent selector <br>
+                            An object should look the same no matter where you put it.
+                        </small>
 
-                        <p class="fragment">Reuse, Reuse, Reuse...hmm</p>
+                        [An Introduction To OOCSS →
+](http://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/)
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        [The Media Object Saves Hundreds Of Lines Of Code →](http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/)
+
+                        <small>(Nicole Sullivan 2010)</small>
+                        ```
+                        <div class="media">
+                            <a href="#" class="img">
+                                <img src="myAvatar.jpg" alt="huxpro" />
+                            </a>
+                            <div class="bd">
+                                <a href="#">@huxpro</a>
+                                <span class="detail">14 miniutes ago</span>
+                            </div>
+                        </div>
+                        ```
+
+                        - [Object Oriented CSS (Slideshow)](http://www.slideshare.net/stubbornella/object-oriented-css/)
+                        - [Our Best Practices Are Killing Us (Slideshow)](http://www.slideshare.net/stubbornella/our-best-practices-are-killing-us/)
+
+                        <p class="fragment">Fighting with number of words...</p>
+
                     </script>
                 </section>
 
@@ -200,7 +238,7 @@
                     <script type="text/template">
                         [What is meant by an “object” in OOCSS? →](https://github.com/stubbornella/oocss/wiki/FAQ#what-is-meant-by-an-object-in-oocss)
 
-                        <small style="margin-top: 10px;">A Common Case you may be familier with</small>
+                        <small style="margin-top: 10px;">A common case you may be familier with</small>
 
 
                         ```
@@ -213,11 +251,18 @@
                         </div>
                         ```
 
-                        - [Decouple HTML from CSS →](http://www.smashingmagazine.com/2012/04/decoupling-html-from-css/)
-                        - [An Introduction To OOCSS →
-](http://www.smashingmagazine.com/2011/12/an-introduction-to-object-oriented-css-oocss/)
+                        <small>"Each CSS class is not necessarily an object in its own right,<br> but can be a property of a wrapper class."</small>
 
-                        <p class="fragment">Anyway...It do make some sense </p>
+
+                        <p class="fragment">Reusable, Portable, Not Easy...</p>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        > "[CSS Zen Garden](http://www.csszengarden.com/) proved that we can alter a design into a myriad of permutations simply by changing the CSS. However, we’ve rarely seen the flip side of this — the side that is more likely to occur in a project: the HTML changes. We modify the HTML and then have to go back and revise any CSS that goes with it."
+
+                        [Decouple HTML from CSS →](http://www.smashingmagazine.com/2012/04/decoupling-html-from-css/)
                     </script>
                 </section>
 
@@ -225,11 +270,17 @@
                     <script type="text/template">
                         ## *[SMACSS](https://smacss.com/)* - Scalable and Modular Architecture for CSS
 
-                        (2012)
+                        ([Jonathan Snook](http://snook.ca/) 2012)
 
                         - Categorizing CSS Rules <br><small>*Base, Layout, Module, State, Theme*</small>
                         - Naming Rules<br><small>*easier to clarity*</small>
                         - Minimizing the Depth<br><small>*decrease reliance on specific HTML*</small>
+
+
+                        <p class="fragment">
+                            Sharing similar idea with OOCSS <br>
+                            <small>Well, It is really a long style guide</small>
+                        </p>
                     </script>
                 </section>
 
@@ -422,10 +473,11 @@
                     <script type="text/template">
                         # *CSS "4"*
 
-                        - [Scoped CSS (the `scoped` attr) ](https://html.spec.whatwg.org/multipage/semantics.html#attr-style-scoped)
                         - [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/)
-                        - [@scope](https://drafts.csswg.org/css-scoping/#scope-atrule)
-                        - [:scope](https://drafts.csswg.org/selectors-4/#the-scope-pseudo)
+                          - [style scoped attribute](https://drafts.csswg.org/css-scoping/#scoping-markup)
+                          - [css syntax @scope](https://drafts.csswg.org/css-scoping/#scope-atrule)
+                        - [CSS Selectors Level 4](https://drafts.csswg.org/selectors-4/)
+                          - [:scope pseudo-class](https://drafts.csswg.org/selectors-4/#the-scope-pseudo)
 
                     </script>
                 </section>
@@ -433,6 +485,14 @@
                 <section data-markdown>
                     <script type="text/template">
                         <img class="logo" src="attach/scoped-css.png" />
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        #*[Houdini](https://wiki.css-houdini.org/)*
+                        [Houdini: Maybe The Most Exciting Development In CSS You’ve Never Heard Of →](https://www.smashingmagazine.com/2016/03/houdini-maybe-the-most-exciting-development-in-css-youve-never-heard-of/)
+
                     </script>
                 </section>
 
@@ -662,13 +722,64 @@
 
                 <section data-markdown>
                     <script type="text/template">
-                        Stop your long story!
-                        ## *Why not give up CSS entirely?*
+                        ### Another Interesting Shit
+                        # [Atomic CSS](http://acss.io)
                     </script>
                 </section>
 
                 <section data-markdown>
                     <script type="text/template">
+                        ### *What's that??*
+                        The Plain Way (metaCSS):
+
+                        ```
+                          <div class="fwb tar bd1"></div>
+                          <div class="m-5 mt-10"></div>
+                        ```
+
+                        Yahoo! [Atomizer](https://github.com/yahoo/atomizer):
+
+                        ```
+                        <div>
+                          <div class="Bgc(#0280ae.5) H(90px) IbBox W(50%) foo_W(100%)"></div>
+                          <div class="Bgc(#0280ae) H(90px) IbBox W(50%) foo_W(100%)"></div>
+                        </div>
+                        ```
+
+                        <p class="fragment">God...</p>
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ## *[Atomic CSS](http://acss.io/)* - Better Inline Styling
+
+                        (Thierry 2013)
+
+                        - Classes related to *presentation instead of content*
+                        <br>
+                        <small>WAT!? It's non-semantics and a [anti-pattern →](http://hax.iteye.com/blog/497338)
+                        <br>"Reinventing Inline CSS!"
+                        <br>Well, I hold similar POV[(1)](https://medium.com/@Huxpro/the-clarification-by-atomic-css-is-very-clear-but-can-not-persuade-me-d915f022d276#.59s329p95)[(2)](https://medium.com/@Huxpro/they-are-definitely-of-different-sharing-the-same-internal-evil-however-ead510fb817d#.iiia4fves) in the most beginning
+                        </small>
+
+                        - Better inline styling with *classes*<br>
+                        <small>
+                            Lower specificity of classes <br>
+                            Pseudo-classes or pseudo-elements support<br>
+                            Portable, reusable (like OOCSS) <br>
+                            Better caching and compression!
+                        </small>
+
+                        [2013.10 Challenging CSS Best Practices →](https://www.smashingmagazine.com/2013/10/challenging-css-best-practices-atomic-approach/)
+
+                    </script>
+                </section>
+
+                <section data-markdown>
+                    <script type="text/template">
+                        ### *Why not give up CSS entirely?*
+
                         <img src="attach/joke/scared.gif" height="400"/>
 
                         WAT?
@@ -789,15 +900,17 @@
 
 
                         <p class="fragment" style="margin-top:30px;">
-                            Don't forget<br>*Learning Curve & Migration Costs*
+                            *Overengineered*, *Unstable*...
+                            <br>*Learning Curve & Migration Costs*
                         </p>
                     </script>
                 </section>
 
                 <section data-markdown>
                     <script type="text/template">
-                        It's good, but right now it looks way too
-                        ##  *overengineered* <span class="fragment">and *Unstable!*</span>
+                        It's great. But maybe you like
+                        ## a little *'old way'*
+                        to write css in .css file
                     </script>
                 </section>
 
@@ -1234,21 +1347,28 @@
                             *clever attribute selector*
                         </small>
 
-                        <p class="fragment" style="font-size: 0.8em;">too experimental to use in production...(except vue)</p>
+                        <p class="fragment" style="font-size: 0.8em;">At your own risk to use in production...</p>
                     </script>
                 </section>
 
 
                 <section data-markdown>
                     <script type="text/template">
-                        Time to give my
-                        # *Opinionated Proposal*
+                        You ask me
+                        # *My Opinion?*
                     </script>
                 </section>
 
                 <section data-markdown>
                     <script type="text/template">
-                        - Inline CSS is not recommended.<br><small>*too extreme to use, at least for present*</small>
+                      >   it’s not like one approach is de facto better than the other as this would depend on which factors are to be taken into consideration.
+                    </script>
+                </section>
+
+
+                <section data-markdown>
+                    <script type="text/template">
+                        - Inline CSS/Atomic CSS.<br><small>*super engineering way, depond on your requirements*</small>
 
                         - CSS Modules is for small and full-stack teams.<br><small>*everyone should know modern JavaScript well*</small>
 
@@ -1258,7 +1378,7 @@
 
                 <section data-markdown>
                     <script type="text/template">
-                        Introducing My Naming Convention
+                        A Pragmatic Proposal <br> *yet another Naming Convention*
 
                         ## *Pages override Components CSS*
 
@@ -1462,7 +1582,7 @@
         </script>
 
         <script type="text/javascript">
-            // GA 
+            // GA
             var _gaId = 'UA-49627206-1';
             var _gaDomain = 'huangxuan.me';
 
