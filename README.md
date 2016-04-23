@@ -22,6 +22,7 @@
     - Naming Convention
         - **BEM**
         - **SUIT**
+    - **Atomic CSS**
     - **CSS in JS**
     - **CSS Modules**  
         - Interoperable CSS
