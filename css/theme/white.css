@@ -1,7 +1,7 @@
 /**
  * White theme for reveal.js. This is the opposite of the 'black' theme.
  *
- * Copyright (C) 2015 Hakim El Hattab, http://hakim.se
+ * By Hakim El Hattab, http://hakim.se
  */
 @import url(../../lib/font/source-sans-pro/source-sans-pro.css);
 section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
@@ -158,8 +158,7 @@ body {
   padding: 5px;
   overflow: auto;
   max-height: 400px;
-  word-wrap: normal;
-  background: rgba(24, 25, 20, 0.72); }
+  word-wrap: normal; }
 
 .reveal table {
   margin: auto;
@@ -183,7 +182,8 @@ body {
 .reveal table td[align="right"] {
   text-align: right; }
 
-.reveal table tr:last-child td {
+.reveal table tbody tr:last-child th,
+.reveal table tbody tr:last-child td {
   border-bottom: none; }
 
 .reveal sup {
@@ -195,7 +195,7 @@ body {
 .reveal small {
   display: inline-block;
   font-size: 0.6em;
-  line-height: 1.3em;
+  line-height: 1.2em;
   vertical-align: top; }
 
 .reveal small * {
@@ -229,6 +229,10 @@ body {
   border: 4px solid #222;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
 
+.reveal section img.plain {
+  border: 0;
+  box-shadow: none; }
+
 .reveal a img {
   -webkit-transition: all .15s linear;
   -moz-transition: all .15s linear;
@@ -242,32 +246,32 @@ body {
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
-.reveal .controls div.navigate-left,
-.reveal .controls div.navigate-left.enabled {
+.reveal .controls .navigate-left,
+.reveal .controls .navigate-left.enabled {
   border-right-color: #2a76dd; }
 
-.reveal .controls div.navigate-right,
-.reveal .controls div.navigate-right.enabled {
+.reveal .controls .navigate-right,
+.reveal .controls .navigate-right.enabled {
   border-left-color: #2a76dd; }
 
-.reveal .controls div.navigate-up,
-.reveal .controls div.navigate-up.enabled {
+.reveal .controls .navigate-up,
+.reveal .controls .navigate-up.enabled {
   border-bottom-color: #2a76dd; }
 
-.reveal .controls div.navigate-down,
-.reveal .controls div.navigate-down.enabled {
+.reveal .controls .navigate-down,
+.reveal .controls .navigate-down.enabled {
   border-top-color: #2a76dd; }
 
-.reveal .controls div.navigate-left.enabled:hover {
+.reveal .controls .navigate-left.enabled:hover {
   border-right-color: #6ca0e8; }
 
-.reveal .controls div.navigate-right.enabled:hover {
+.reveal .controls .navigate-right.enabled:hover {
   border-left-color: #6ca0e8; }
 
-.reveal .controls div.navigate-up.enabled:hover {
+.reveal .controls .navigate-up.enabled:hover {
   border-bottom-color: #6ca0e8; }
 
-.reveal .controls div.navigate-down.enabled:hover {
+.reveal .controls .navigate-down.enabled:hover {
   border-top-color: #6ca0e8; }
 
 /*********************************************
@@ -281,9 +285,3 @@ body {
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
-
-/*********************************************
- * SLIDE NUMBER
- *********************************************/
-.reveal .slide-number {
-  color: #2a76dd; }
