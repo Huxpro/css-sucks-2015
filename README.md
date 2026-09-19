@@ -3,9 +3,9 @@
 ### (都 2015 年了，CSS 怎么还是这么糟糕)
 
 
-### [Watch Slides → ](http://huangxuan.me/css-sucks-2015)
+### [Watch Slides → ](http://huxpro.github.io/css-sucks-2015)
 
-<img src="http://huangxuan.me/css-sucks-2015/attach/qrcode.png" width="300" />
+<img src="http://huxpro.github.io/css-sucks-2015/attach/qrcode.png" width="300" />
 
 ### Catalog
 
